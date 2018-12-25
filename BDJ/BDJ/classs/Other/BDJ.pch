@@ -1,0 +1,39 @@
+//
+//  BDJ.pch
+//  BDJ
+//
+//  Created by 唯一 on 2018/12/10.
+//  Copyright © 2018 com.ios. All rights reserved.
+//
+//   /Users/weiyi/Desktop/xcode练手/BDJ/    BDJ/classs/Other/BDJ.pch提取这一部分
+/*
+ 
+pch作用：
+1.存放公用宏
+2.存放公用头文件
+3.自定义Log
+ 使用步骤：提前编译
+*/
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Item.h"
+
+/***********屏幕适配*************/
+#define ZFSScreenW [UIScreen mainScreen].bounds.size.width
+#define ZFSScreenH [UIScreen mainScreen].bounds.size.height
+#define iphone6P (ZFSScreenH == 736)
+#define iphone6 (ZFSScreenH == 667)
+#define iphone5 (ZFSScreenH == 568)
+#define iphone4 (ZFSScreenH == 480)
+/***********屏幕适配*************/
+
+#define ZFSFunc ZFSLog(@"%s",__func__)
+
+#ifdef DEBUG // 调试
+
+#define ZFSLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define ZFSLog(...)
+
+#endif
