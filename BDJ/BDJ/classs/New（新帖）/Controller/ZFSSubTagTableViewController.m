@@ -28,6 +28,14 @@ static NSString * const ID = @"cell";
 //    [self.tableView registerNib:[UINib nibWithNibName:@"ZFSSubTagTableViewCell" bundle:nil] forHeaderFooterViewReuseIdentifier:ID];
     [self.tableView registerNib:[UINib nibWithNibName:@"ZFSSubTagTableViewCell" bundle:nil] forCellReuseIdentifier:ID];
     self.title = @"推荐";
+    //处理tableview的cell分割线,左边不留缝隙（占据全屏）。
+//    self.tableView.separatorInset = UIEdgeInsetsZero;//第一种设置分割线方法
+    // 处理cell分割线 1.自定义分割线 2.系统属性(iOS8才支持) 3.万能方式(重写cell的setFrame) 了解tableView底层实现了解 1.取消系统自带分割线 2.把tableView背景色设置为分割线的背景色 3.重写setFrame
+    //万能设置分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // 220 220 221
+    self.tableView.backgroundColor = ZFSColor(220, 220, 221);
 }
 - (void) laodData{
     //1.创建请求会话者

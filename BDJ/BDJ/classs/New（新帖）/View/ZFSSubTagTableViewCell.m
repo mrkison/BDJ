@@ -16,6 +16,12 @@
 @end
 
 @implementation ZFSSubTagTableViewCell
+#pragma - mark 空出分割线位置
+- (void)setFrame:(CGRect)frame{
+    frame.size.height -= 1;
+    [super setFrame:frame];
+}
+#pragma - mark 把数据赋值给cell
 -(void)setItem:(ZFSSubTagItem *)item{
     _item = item;
     /*
@@ -23,15 +29,20 @@
      */
     _nameView.text = item.theme_name;
     //判断订阅数大于10000
-    NSString *subNum = [NSString stringWithFormat:@"%@人订阅",item.sub_number];
-    NSInteger num = item.sub_number.integerValue;
+    [self processNum];
+   
+    [_iconImage sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+}
+#pragma - 处理订阅数大于10000时
+- (void) processNum{
+    NSString *subNum = [NSString stringWithFormat:@"%@人订阅",_item.sub_number];
+    NSInteger num = _item.sub_number.integerValue;
     if (num > 10000) {
         CGFloat numF = num / 10000.0;
         subNum = [NSString stringWithFormat:@"%.1f万人订阅",numF];
         [subNum stringByReplacingOccurrencesOfString:@".0" withString:@""];
+         _numView.text = subNum;
     }
-    _numView.text = subNum;
-    [_iconImage sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

@@ -17,6 +17,7 @@ pch作用：
 #import "UIView+Frame.h"
 #import "UIBarButtonItem+Item.h"
 
+#define ZFSColor(r,g,b) [UIColor colorWithRed:(r) / 256.0 green:(g) / 256.0 blue:(b) / 256.0 alpha:1]
 /***********屏幕适配*************/
 #define ZFSScreenW [UIScreen mainScreen].bounds.size.width
 #define ZFSScreenH [UIScreen mainScreen].bounds.size.height
