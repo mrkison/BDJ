@@ -9,6 +9,7 @@
 #import "ZFSSubTagTableViewCell.h"
 #import "ZFSSubTagItem.h"
 #import <UIImageView+WebCache.h>
+
 @interface ZFSSubTagTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameView;

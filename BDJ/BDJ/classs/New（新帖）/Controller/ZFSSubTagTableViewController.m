@@ -11,10 +11,12 @@
 #import "ZFSSubTagItem.h"
 #import <MJExtension/MJExtension.h>
 #import "ZFSSubTagTableViewCell.h"
+#import <SVProgressHUD.h>
 
 static NSString * const ID = @"cell";
 @interface ZFSSubTagTableViewController ()
 @property (strong , nonatomic) NSArray *subItem;
+@property (weak , nonatomic)AFHTTPSessionManager *mgr;
 @end
 
 @implementation ZFSSubTagTableViewController
@@ -25,35 +27,50 @@ static NSString * const ID = @"cell";
     //加载数据
     [self laodData];
     //注册cell
-//    [self.tableView registerNib:[UINib nibWithNibName:@"ZFSSubTagTableViewCell" bundle:nil] forHeaderFooterViewReuseIdentifier:ID];
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ZFSSubTagTableViewCell" bundle:nil] forHeaderFooterViewReuseIdentifier:ID];//这是错的
     [self.tableView registerNib:[UINib nibWithNibName:@"ZFSSubTagTableViewCell" bundle:nil] forCellReuseIdentifier:ID];
     self.title = @"推荐";
     //处理tableview的cell分割线,左边不留缝隙（占据全屏）。
 //    self.tableView.separatorInset = UIEdgeInsetsZero;//第一种设置分割线方法
     // 处理cell分割线 1.自定义分割线 2.系统属性(iOS8才支持) 3.万能方式(重写cell的setFrame) 了解tableView底层实现了解 1.取消系统自带分割线 2.把tableView背景色设置为分割线的背景色 3.重写setFrame
-    //万能设置分割线
+    /*万能设置分割线*/
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     // 220 220 221
     self.tableView.backgroundColor = ZFSColor(220, 220, 221);
+    // 提示用户当前正在加载数据 SVPro
+    [SVProgressHUD showWithStatus:@"正在加载ing....."];
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    /*网速慢时未加载完点返回时去除加载图像，取消数据请求*/
+    // 销毁指示器
+    [SVProgressHUD dismiss];
+    // 取消之前的请求
+    [_mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
 }
 - (void) laodData{
     //1.创建请求会话者
-    AFHTTPSessionManager *manage = [AFHTTPSessionManager manager];
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    _mgr = mgr;
     //2.设置参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
     //3.请求
-    [manage GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [mgr GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [responseObject writeToFile:@"/Users/weiyi/Desktop/xcode练手/BDJ-plist/sub.plist" atomically:YES];
+        //移除加载动画
+        [SVProgressHUD dismiss];
         //字典转模型
         _subItem = [ZFSSubTagItem mj_objectArrayWithKeyValuesArray:responseObject];
         // 刷新表格
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
+        //移除加载动画
+        [SVProgressHUD dismiss];
     }];
 }
 #pragma mark - Table view data source

@@ -2,4 +2,5 @@ target 'BDJ'do
 pod 'MJExtension'
 pod 'AFNetworking'
 pod 'SDWebImage'
+pod 'SVProgressHUD'
 end

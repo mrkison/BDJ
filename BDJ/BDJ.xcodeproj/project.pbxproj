@@ -535,6 +535,7 @@
 				3A21192421B8091F001B2D1B /* Sources */,
 				3A21192521B8091F001B2D1B /* Frameworks */,
 				3A21192621B8091F001B2D1B /* Resources */,
+				24E47ACC7BBAA0A4185DFC58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -631,6 +632,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24E47ACC7BBAA0A4185DFC58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BDJ/Pods-BDJ-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDJ/Pods-BDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		35B8DF402D83D933AD788C3F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
