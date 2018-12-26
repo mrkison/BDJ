@@ -39,6 +39,7 @@
 		3AC3611221C7CA9C00CBCE4A /* ZFSADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3611121C7CA9C00CBCE4A /* ZFSADItem.m */; };
 		3ACEF47121CBBD94005A0074 /* ZFSSubTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEF46F21CBBD94005A0074 /* ZFSSubTagTableViewCell.m */; };
 		3ACEF47221CBBD94005A0074 /* ZFSSubTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACEF47021CBBD94005A0074 /* ZFSSubTagTableViewCell.xib */; };
+		3AD919CA21D3C55C009D60AD /* ZFSFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */; };
 		D63C855A240ABD518895F09D /* libPods-BDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86C91E43BFAA59E82F13C1 /* libPods-BDJ.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		3ACEF46E21CBBD94005A0074 /* ZFSSubTagTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSSubTagTableViewCell.h; sourceTree = "<group>"; };
 		3ACEF46F21CBBD94005A0074 /* ZFSSubTagTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSSubTagTableViewCell.m; sourceTree = "<group>"; };
 		3ACEF47021CBBD94005A0074 /* ZFSSubTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSSubTagTableViewCell.xib; sourceTree = "<group>"; };
+		3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSFriendTrendViewController.xib; sourceTree = "<group>"; };
 		9CB685798134447D14BB5EE8 /* Pods-BDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDJ/Pods-BDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C03C4D7F6D668E6A588D52 /* Pods-BDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDJ/Pods-BDJ.release.xcconfig"; sourceTree = "<group>"; };
 		FA86C91E43BFAA59E82F13C1 /* libPods-BDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +247,7 @@
 			children = (
 				3AB3243721B961C4001C5DA4 /* ZFSFriendTrendViewController.h */,
 				3AB3243821B961C4001C5DA4 /* ZFSFriendTrendViewController.m */,
+				3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD919CA21D3C55C009D60AD /* ZFSFriendTrendViewController.xib in Resources */,
 				3A8BCA9621C51D8300AE0249 /* ZFSADViewController.xib in Resources */,
 				3A21193821B80920001B2D1B /* LaunchScreen.storyboard in Resources */,
 				3A21193521B80920001B2D1B /* Assets.xcassets in Resources */,
