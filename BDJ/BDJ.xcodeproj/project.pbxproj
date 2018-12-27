@@ -37,6 +37,8 @@
 		3AB3243C21B96205001C5DA4 /* ZFSMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243B21B96205001C5DA4 /* ZFSMeTableViewController.m */; };
 		3AB3243F21B9622A001C5DA4 /* ZFSPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243E21B9622A001C5DA4 /* ZFSPublishViewController.m */; };
 		3AC3611221C7CA9C00CBCE4A /* ZFSADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3611121C7CA9C00CBCE4A /* ZFSADItem.m */; };
+		3AC7BC9221D5016200A73578 /* ZFSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7BC9021D5016200A73578 /* ZFSLoginRegisterViewController.m */; };
+		3AC7BC9321D5016200A73578 /* ZFSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC7BC9121D5016200A73578 /* ZFSLoginRegisterViewController.xib */; };
 		3ACEF47121CBBD94005A0074 /* ZFSSubTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEF46F21CBBD94005A0074 /* ZFSSubTagTableViewCell.m */; };
 		3ACEF47221CBBD94005A0074 /* ZFSSubTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACEF47021CBBD94005A0074 /* ZFSSubTagTableViewCell.xib */; };
 		3AD919CA21D3C55C009D60AD /* ZFSFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */; };
@@ -106,6 +108,9 @@
 		3AB3243E21B9622A001C5DA4 /* ZFSPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSPublishViewController.m; sourceTree = "<group>"; };
 		3AC3611021C7CA9C00CBCE4A /* ZFSADItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSADItem.h; sourceTree = "<group>"; };
 		3AC3611121C7CA9C00CBCE4A /* ZFSADItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSADItem.m; sourceTree = "<group>"; };
+		3AC7BC8F21D5016200A73578 /* ZFSLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSLoginRegisterViewController.h; sourceTree = "<group>"; };
+		3AC7BC9021D5016200A73578 /* ZFSLoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSLoginRegisterViewController.m; sourceTree = "<group>"; };
+		3AC7BC9121D5016200A73578 /* ZFSLoginRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		3ACEF46E21CBBD94005A0074 /* ZFSSubTagTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSSubTagTableViewCell.h; sourceTree = "<group>"; };
 		3ACEF46F21CBBD94005A0074 /* ZFSSubTagTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSSubTagTableViewCell.m; sourceTree = "<group>"; };
 		3ACEF47021CBBD94005A0074 /* ZFSSubTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSSubTagTableViewCell.xib; sourceTree = "<group>"; };
@@ -248,6 +253,9 @@
 				3AB3243721B961C4001C5DA4 /* ZFSFriendTrendViewController.h */,
 				3AB3243821B961C4001C5DA4 /* ZFSFriendTrendViewController.m */,
 				3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */,
+				3AC7BC8F21D5016200A73578 /* ZFSLoginRegisterViewController.h */,
+				3AC7BC9021D5016200A73578 /* ZFSLoginRegisterViewController.m */,
+				3AC7BC9121D5016200A73578 /* ZFSLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -623,6 +631,7 @@
 				3A8BCAA121C51E3700AE0249 /* LaunchImage-800-667h@2x.png in Resources */,
 				3A8BCA9F21C51E3700AE0249 /* LaunchImage@2x.png in Resources */,
 				3A8BCAA521C51E3700AE0249 /* LaunchImage.png in Resources */,
+				3AC7BC9321D5016200A73578 /* ZFSLoginRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +710,7 @@
 				3A942B3D21CA7EA30000253A /* ZFSSubTagItem.m in Sources */,
 				3A41F3A921B96D7F005EA1A3 /* ZFSTabBarController.m in Sources */,
 				3AB3243621B961A1001C5DA4 /* ZFSEssenceViewController.m in Sources */,
+				3AC7BC9221D5016200A73578 /* ZFSLoginRegisterViewController.m in Sources */,
 				3AB3243C21B96205001C5DA4 /* ZFSMeTableViewController.m in Sources */,
 				3A21196A21B81A67001B2D1B /* AppDelegate.m in Sources */,
 				3AC3611221C7CA9C00CBCE4A /* ZFSADItem.m in Sources */,

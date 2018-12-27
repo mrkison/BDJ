@@ -7,12 +7,19 @@
 //
 
 #import "ZFSFriendTrendViewController.h"
-
+#import "ZFSLoginRegisterViewController.h"
 @interface ZFSFriendTrendViewController ()
 
 @end
 
 @implementation ZFSFriendTrendViewController
+//复杂点的xib步骤：// 1.划分结构(顶部 中间 底部) // 2.一个结构一个结构搭建（占位视图思想）
+/*监听点击登录按钮*/
+- (IBAction)clickLoginRegister:(id)sender {
+    //moda出登陆界面
+    ZFSLoginRegisterViewController *logRegister = [[ZFSLoginRegisterViewController alloc] init];
+    [self presentViewController:logRegister animated:YES completion:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
