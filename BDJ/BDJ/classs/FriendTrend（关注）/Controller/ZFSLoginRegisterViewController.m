@@ -7,8 +7,9 @@
 //
 
 #import "ZFSLoginRegisterViewController.h"
-
+#import "ZFSLogRegisterView.h"
 @interface ZFSLoginRegisterViewController ()
+@property (weak, nonatomic) IBOutlet UIView *midView;
 
 @end
 
@@ -23,7 +24,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    ZFSLogRegisterView *login = [ZFSLogRegisterView loginView];
+    [self.midView addSubview:login];
 }
 
 /*

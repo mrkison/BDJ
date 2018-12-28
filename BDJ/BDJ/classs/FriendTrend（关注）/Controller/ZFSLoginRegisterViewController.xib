@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFSLoginRegisterViewController">
             <connections>
+                <outlet property="midView" destination="aZt-O3-PMd" id="Tnx-uA-JGF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,6 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_background" translatesAutoresizingMaskIntoConstraints="NO" id="LgV-B7-Vle">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhX-uh-dqb" userLabel="Top">
                     <rect key="frame" x="0.0" y="30" width="375" height="35"/>
                     <subviews>
@@ -58,13 +62,13 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZt-O3-PMd" userLabel="mid">
-                    <rect key="frame" x="0.0" y="105" width="375" height="240"/>
-                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="0.0" y="105" width="375" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="240" id="FNI-7r-Kfp"/>
+                        <constraint firstAttribute="height" constant="300" id="FNI-7r-Kfp"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXk-Kl-q8m">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXk-Kl-q8m" userLabel="bottom">
                     <rect key="frame" x="0.0" y="517" width="375" height="150"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -74,7 +78,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="LgV-B7-Vle" secondAttribute="trailing" id="47F-x8-Z0j"/>
+                <constraint firstAttribute="bottom" secondItem="LgV-B7-Vle" secondAttribute="bottom" id="BZY-rZ-NBy"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="aZt-O3-PMd" secondAttribute="trailing" id="E2k-sM-wXI"/>
+                <constraint firstItem="LgV-B7-Vle" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ESE-7V-WKd"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="oXk-Kl-q8m" secondAttribute="trailing" id="HNh-Zg-vYI"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RhX-uh-dqb" secondAttribute="trailing" id="QBl-Mw-D5L"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="oXk-Kl-q8m" secondAttribute="bottom" id="Ywp-B5-yCF"/>
@@ -83,6 +90,7 @@
                 <constraint firstItem="aZt-O3-PMd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pdw-Lz-1TZ"/>
                 <constraint firstItem="aZt-O3-PMd" firstAttribute="top" secondItem="RhX-uh-dqb" secondAttribute="bottom" constant="40" id="q71-BQ-ivt"/>
                 <constraint firstItem="RhX-uh-dqb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="tuL-O4-DZ2"/>
+                <constraint firstItem="LgV-B7-Vle" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yTE-QY-SuC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="-119" y="-144"/>
@@ -90,5 +98,6 @@
     </objects>
     <resources>
         <image name="login_close_icon" width="16" height="16"/>
+        <image name="login_register_background" width="320" height="568"/>
     </resources>
 </document>

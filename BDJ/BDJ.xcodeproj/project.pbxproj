@@ -42,6 +42,8 @@
 		3ACEF47121CBBD94005A0074 /* ZFSSubTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEF46F21CBBD94005A0074 /* ZFSSubTagTableViewCell.m */; };
 		3ACEF47221CBBD94005A0074 /* ZFSSubTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ACEF47021CBBD94005A0074 /* ZFSSubTagTableViewCell.xib */; };
 		3AD919CA21D3C55C009D60AD /* ZFSFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */; };
+		3AE1822521D65AF200778FD5 /* ZFSLogRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1822421D65AF200778FD5 /* ZFSLogRegisterView.m */; };
+		3AE1822721D65B2000778FD5 /* ZFSLogRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE1822621D65B2000778FD5 /* ZFSLogRegisterView.xib */; };
 		D63C855A240ABD518895F09D /* libPods-BDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA86C91E43BFAA59E82F13C1 /* libPods-BDJ.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,9 @@
 		3ACEF46F21CBBD94005A0074 /* ZFSSubTagTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSSubTagTableViewCell.m; sourceTree = "<group>"; };
 		3ACEF47021CBBD94005A0074 /* ZFSSubTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSSubTagTableViewCell.xib; sourceTree = "<group>"; };
 		3AD919C921D3C55C009D60AD /* ZFSFriendTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSFriendTrendViewController.xib; sourceTree = "<group>"; };
+		3AE1822321D65AF200778FD5 /* ZFSLogRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSLogRegisterView.h; sourceTree = "<group>"; };
+		3AE1822421D65AF200778FD5 /* ZFSLogRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSLogRegisterView.m; sourceTree = "<group>"; };
+		3AE1822621D65B2000778FD5 /* ZFSLogRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSLogRegisterView.xib; sourceTree = "<group>"; };
 		9CB685798134447D14BB5EE8 /* Pods-BDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDJ/Pods-BDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C03C4D7F6D668E6A588D52 /* Pods-BDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDJ/Pods-BDJ.release.xcconfig"; sourceTree = "<group>"; };
 		FA86C91E43BFAA59E82F13C1 /* libPods-BDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +275,9 @@
 		3A21195821B81A66001B2D1B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3AE1822321D65AF200778FD5 /* ZFSLogRegisterView.h */,
+				3AE1822421D65AF200778FD5 /* ZFSLogRegisterView.m */,
+				3AE1822621D65B2000778FD5 /* ZFSLogRegisterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,6 +638,7 @@
 				3A8BCAA321C51E3700AE0249 /* LaunchImage-700@2x.png in Resources */,
 				3A8BCAA121C51E3700AE0249 /* LaunchImage-800-667h@2x.png in Resources */,
 				3A8BCA9F21C51E3700AE0249 /* LaunchImage@2x.png in Resources */,
+				3AE1822721D65B2000778FD5 /* ZFSLogRegisterView.xib in Resources */,
 				3A8BCAA521C51E3700AE0249 /* LaunchImage.png in Resources */,
 				3AC7BC9321D5016200A73578 /* ZFSLoginRegisterViewController.xib in Resources */,
 			);
@@ -705,6 +714,7 @@
 				3ACEF47121CBBD94005A0074 /* ZFSSubTagTableViewCell.m in Sources */,
 				3AA51E8721C0009D00F7271D /* ZFSSettingTableViewController.m in Sources */,
 				3AAF49FC21BD4CC000CBF7BC /* ZFSTabBar.m in Sources */,
+				3AE1822521D65AF200778FD5 /* ZFSLogRegisterView.m in Sources */,
 				3A41F3AD21B9718F005EA1A3 /* UIImage+Image.m in Sources */,
 				3AA51E7D21BFF1F000F7271D /* ZFSNavigationController.m in Sources */,
 				3A942B3D21CA7EA30000253A /* ZFSSubTagItem.m in Sources */,
