@@ -11,12 +11,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginRegisterbuttom;
 @end
 @implementation ZFSLogRegisterView
+/*快速创建注册xib*/
 + (instancetype) loginView{
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil]firstObject];
 }
-//+ (instancetype) registerViwe{
-//    
-//}
++ (instancetype) registerViwe{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil]lastObject];
+
+}
 - (void)awakeFromNib{
 //    [super awakeFromNib];
     /*设置登陆注册按钮背景图片不拉伸*/

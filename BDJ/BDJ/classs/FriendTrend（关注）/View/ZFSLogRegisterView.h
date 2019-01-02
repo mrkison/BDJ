@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZFSLogRegisterView : UIView
 + (instancetype) loginView;
-//+ (instancetype) registerViwe;
++ (instancetype) registerViwe;
 @end
 
 NS_ASSUME_NONNULL_END

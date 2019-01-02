@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFSLoginRegisterViewController">
             <connections>
+                <outlet property="leadCons" destination="1s7-8l-j5s" id="Zzi-hk-C6f"/>
                 <outlet property="midView" destination="aZt-O3-PMd" id="Tnx-uA-JGF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -50,7 +51,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.36458555660000003" blue="0.20608288799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="ncn-6E-maq" secondAttribute="trailing" id="0Q1-L3-Bmn"/>
                         <constraint firstAttribute="bottom" secondItem="M7N-Wc-JfS" secondAttribute="bottom" id="49s-XV-OYE"/>
@@ -62,7 +63,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZt-O3-PMd" userLabel="mid">
-                    <rect key="frame" x="0.0" y="105" width="375" height="300"/>
+                    <rect key="frame" x="0.0" y="105" width="750" height="300"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="FNI-7r-Kfp"/>
@@ -78,17 +79,18 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="aZt-O3-PMd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1s7-8l-j5s"/>
                 <constraint firstAttribute="trailing" secondItem="LgV-B7-Vle" secondAttribute="trailing" id="47F-x8-Z0j"/>
                 <constraint firstAttribute="bottom" secondItem="LgV-B7-Vle" secondAttribute="bottom" id="BZY-rZ-NBy"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="aZt-O3-PMd" secondAttribute="trailing" id="E2k-sM-wXI"/>
                 <constraint firstItem="LgV-B7-Vle" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ESE-7V-WKd"/>
+                <constraint firstAttribute="width" secondItem="LgV-B7-Vle" secondAttribute="width" id="F7s-Gy-KRe"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="oXk-Kl-q8m" secondAttribute="trailing" id="HNh-Zg-vYI"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RhX-uh-dqb" secondAttribute="trailing" id="QBl-Mw-D5L"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="oXk-Kl-q8m" secondAttribute="bottom" id="Ywp-B5-yCF"/>
                 <constraint firstItem="oXk-Kl-q8m" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="a99-Vv-x5W"/>
                 <constraint firstItem="RhX-uh-dqb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pZU-Fi-JWO"/>
-                <constraint firstItem="aZt-O3-PMd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pdw-Lz-1TZ"/>
                 <constraint firstItem="aZt-O3-PMd" firstAttribute="top" secondItem="RhX-uh-dqb" secondAttribute="bottom" constant="40" id="q71-BQ-ivt"/>
+                <constraint firstItem="aZt-O3-PMd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2" id="tKc-3Z-ZKi"/>
                 <constraint firstItem="RhX-uh-dqb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="tuL-O4-DZ2"/>
                 <constraint firstItem="LgV-B7-Vle" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yTE-QY-SuC"/>
             </constraints>

@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFSADViewController">
             <connections>
-                <outlet property="adcontainView" destination="vDm-Ue-Ppg" id="QiH-sJ-Tr1"/>
+                <outlet property="adContainView" destination="vDm-Ue-Ppg" id="QiH-sJ-Tr1"/>
                 <outlet property="jumpbtn" destination="z9d-Py-Iyh" id="2sD-kA-z5G"/>
                 <outlet property="launchImageView" destination="Hlj-bX-0Sw" id="PuI-pC-VE0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDm-Ue-Ppg" userLabel="广告占位">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9d-Py-Iyh">
@@ -52,7 +52,7 @@
                 <constraint firstItem="vDm-Ue-Ppg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="M3E-LM-5KD"/>
                 <constraint firstItem="Hlj-bX-0Sw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Nl5-lJ-d4G"/>
                 <constraint firstItem="Hlj-bX-0Sw" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="PGZ-fh-d3n"/>
-                <constraint firstItem="vDm-Ue-Ppg" firstAttribute="top" secondItem="z9d-Py-Iyh" secondAttribute="top" id="Vbx-0h-y2g"/>
+                <constraint firstItem="vDm-Ue-Ppg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vbx-0h-y2g"/>
                 <constraint firstItem="Hlj-bX-0Sw" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="ZPN-uF-Z8a"/>
                 <constraint firstItem="Hlj-bX-0Sw" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="fPe-d4-u53"/>
                 <constraint firstItem="z9d-Py-Iyh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="kyl-nG-G0f"/>
