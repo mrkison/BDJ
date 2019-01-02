@@ -54,4 +54,20 @@
 - (CGFloat)ZFS_height{
     return self.frame.size.height;
 }
+- (void)setZFS_centerX:(CGFloat)ZFS_centerX{
+    CGPoint center = self.center;
+    center.x = ZFS_centerX;
+    self.center = center;
+}
+- (CGFloat)ZFS_centerX{
+    return self.center.x;
+}
+- (void)setZFS_centerY:(CGFloat)ZFS_centerY{
+    CGPoint center = self.center;
+    center.y = ZFS_centerY;
+    self.center = center;
+}
+- (CGFloat)ZFS_centerY{
+    return self.center.y;
+}
 @end

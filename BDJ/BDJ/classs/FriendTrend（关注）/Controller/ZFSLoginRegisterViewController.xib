@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFSLoginRegisterViewController">
             <connections>
+                <outlet property="bottomView" destination="oXk-Kl-q8m" id="2jx-cq-ONC"/>
                 <outlet property="leadCons" destination="1s7-8l-j5s" id="Zzi-hk-C6f"/>
                 <outlet property="midView" destination="aZt-O3-PMd" id="Tnx-uA-JGF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -71,7 +72,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXk-Kl-q8m" userLabel="bottom">
                     <rect key="frame" x="0.0" y="517" width="375" height="150"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="mcq-CV-b8B"/>
                     </constraints>

@@ -36,6 +36,9 @@
 		3AB3243921B961C4001C5DA4 /* ZFSFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243821B961C4001C5DA4 /* ZFSFriendTrendViewController.m */; };
 		3AB3243C21B96205001C5DA4 /* ZFSMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243B21B96205001C5DA4 /* ZFSMeTableViewController.m */; };
 		3AB3243F21B9622A001C5DA4 /* ZFSPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243E21B9622A001C5DA4 /* ZFSPublishViewController.m */; };
+		3AB82B8321DCEA2900B42F42 /* ZFSFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB82B8221DCEA2900B42F42 /* ZFSFastLoginView.m */; };
+		3AB82B8521DCEA4D00B42F42 /* ZFSFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB82B8421DCEA4D00B42F42 /* ZFSFastLoginView.xib */; };
+		3AB82B8821DCFF0100B42F42 /* ZFSFastButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB82B8721DCFF0100B42F42 /* ZFSFastButtom.m */; };
 		3AC3611221C7CA9C00CBCE4A /* ZFSADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3611121C7CA9C00CBCE4A /* ZFSADItem.m */; };
 		3AC7BC9221D5016200A73578 /* ZFSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7BC9021D5016200A73578 /* ZFSLoginRegisterViewController.m */; };
 		3AC7BC9321D5016200A73578 /* ZFSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC7BC9121D5016200A73578 /* ZFSLoginRegisterViewController.xib */; };
@@ -108,6 +111,11 @@
 		3AB3243B21B96205001C5DA4 /* ZFSMeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSMeTableViewController.m; sourceTree = "<group>"; };
 		3AB3243D21B9622A001C5DA4 /* ZFSPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSPublishViewController.h; sourceTree = "<group>"; };
 		3AB3243E21B9622A001C5DA4 /* ZFSPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSPublishViewController.m; sourceTree = "<group>"; };
+		3AB82B8121DCEA2900B42F42 /* ZFSFastLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSFastLoginView.h; sourceTree = "<group>"; };
+		3AB82B8221DCEA2900B42F42 /* ZFSFastLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSFastLoginView.m; sourceTree = "<group>"; };
+		3AB82B8421DCEA4D00B42F42 /* ZFSFastLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFSFastLoginView.xib; sourceTree = "<group>"; };
+		3AB82B8621DCFF0100B42F42 /* ZFSFastButtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSFastButtom.h; sourceTree = "<group>"; };
+		3AB82B8721DCFF0100B42F42 /* ZFSFastButtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSFastButtom.m; sourceTree = "<group>"; };
 		3AC3611021C7CA9C00CBCE4A /* ZFSADItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSADItem.h; sourceTree = "<group>"; };
 		3AC3611121C7CA9C00CBCE4A /* ZFSADItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSADItem.m; sourceTree = "<group>"; };
 		3AC7BC8F21D5016200A73578 /* ZFSLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSLoginRegisterViewController.h; sourceTree = "<group>"; };
@@ -278,6 +286,11 @@
 				3AE1822321D65AF200778FD5 /* ZFSLogRegisterView.h */,
 				3AE1822421D65AF200778FD5 /* ZFSLogRegisterView.m */,
 				3AE1822621D65B2000778FD5 /* ZFSLogRegisterView.xib */,
+				3AB82B8121DCEA2900B42F42 /* ZFSFastLoginView.h */,
+				3AB82B8221DCEA2900B42F42 /* ZFSFastLoginView.m */,
+				3AB82B8421DCEA4D00B42F42 /* ZFSFastLoginView.xib */,
+				3AB82B8621DCFF0100B42F42 /* ZFSFastButtom.h */,
+				3AB82B8721DCFF0100B42F42 /* ZFSFastButtom.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +649,7 @@
 				3A8BCAA021C51E3700AE0249 /* LaunchImage-568h@2x.png in Resources */,
 				3A8BCAA421C51E3700AE0249 /* LaunchImage-700-568h@2x.png in Resources */,
 				3A8BCAA321C51E3700AE0249 /* LaunchImage-700@2x.png in Resources */,
+				3AB82B8521DCEA4D00B42F42 /* ZFSFastLoginView.xib in Resources */,
 				3A8BCAA121C51E3700AE0249 /* LaunchImage-800-667h@2x.png in Resources */,
 				3A8BCA9F21C51E3700AE0249 /* LaunchImage@2x.png in Resources */,
 				3AE1822721D65B2000778FD5 /* ZFSLogRegisterView.xib in Resources */,
@@ -705,6 +719,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB82B8821DCFF0100B42F42 /* ZFSFastButtom.m in Sources */,
 				3AB3243F21B9622A001C5DA4 /* ZFSPublishViewController.m in Sources */,
 				3AA51E7A21BFDA8500F7271D /* UIBarButtonItem+Item.m in Sources */,
 				3AB3243921B961C4001C5DA4 /* ZFSFriendTrendViewController.m in Sources */,
@@ -713,6 +728,7 @@
 				3A8BCA9521C51D8300AE0249 /* ZFSADViewController.m in Sources */,
 				3ACEF47121CBBD94005A0074 /* ZFSSubTagTableViewCell.m in Sources */,
 				3AA51E8721C0009D00F7271D /* ZFSSettingTableViewController.m in Sources */,
+				3AB82B8321DCEA2900B42F42 /* ZFSFastLoginView.m in Sources */,
 				3AAF49FC21BD4CC000CBF7BC /* ZFSTabBar.m in Sources */,
 				3AE1822521D65AF200778FD5 /* ZFSLogRegisterView.m in Sources */,
 				3A41F3AD21B9718F005EA1A3 /* UIImage+Image.m in Sources */,

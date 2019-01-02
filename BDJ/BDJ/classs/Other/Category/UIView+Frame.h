@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property CGFloat ZFS_y;
 @property CGFloat ZFS_width;
 @property CGFloat ZFS_height;
-
+@property CGFloat ZFS_centerX;
+@property CGFloat ZFS_centerY;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,9 +8,11 @@
 
 #import "ZFSLoginRegisterViewController.h"
 #import "ZFSLogRegisterView.h"
+#import "ZFSFastLoginView.h"
 @interface ZFSLoginRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UIView *midView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadCons;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 @end
 
@@ -36,6 +38,8 @@
     [self.midView addSubview:login];//登陆输入框xib
     ZFSLogRegisterView *registe = [ZFSLogRegisterView registerViwe];
     [self.midView addSubview:registe];//注册输入框xib
+    ZFSFastLoginView *fastLoginView = [ZFSFastLoginView loadFastLonginView];
+    [self.bottomView addSubview:fastLoginView];//快速登陆xib
 }
 /*
  屏幕适配:
@@ -46,6 +50,7 @@
  */
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
+    //手动添加布局，防止适配出问题。
     ZFSLogRegisterView *loginV = self.midView.subviews[0];
     loginV.frame = CGRectMake(0, 0, self.midView.ZFS_width * 0.5, self.midView.ZFS_height);
     ZFSLogRegisterView *registerV = self.midView.subviews[1];
