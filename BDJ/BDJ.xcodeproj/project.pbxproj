@@ -30,6 +30,8 @@
 		3AA51E7A21BFDA8500F7271D /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA51E7921BFDA8500F7271D /* UIBarButtonItem+Item.m */; };
 		3AA51E7D21BFF1F000F7271D /* ZFSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA51E7C21BFF1F000F7271D /* ZFSNavigationController.m */; };
 		3AA51E8721C0009D00F7271D /* ZFSSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA51E8621C0009D00F7271D /* ZFSSettingTableViewController.m */; };
+		3AAAF6AD21DE347F006ECF9C /* ZFSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAF6AC21DE347F006ECF9C /* ZFSTextField.m */; };
+		3AAAF6B021DE3611006ECF9C /* UITextField+placeHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAF6AF21DE3611006ECF9C /* UITextField+placeHolder.m */; };
 		3AAF49FC21BD4CC000CBF7BC /* ZFSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF49FB21BD4CC000CBF7BC /* ZFSTabBar.m */; };
 		3AB3243321B9610D001C5DA4 /* ZFSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243221B9610D001C5DA4 /* ZFSNewViewController.m */; };
 		3AB3243621B961A1001C5DA4 /* ZFSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3243521B961A1001C5DA4 /* ZFSEssenceViewController.m */; };
@@ -99,6 +101,10 @@
 		3AA51E7C21BFF1F000F7271D /* ZFSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSNavigationController.m; sourceTree = "<group>"; };
 		3AA51E8521C0009D00F7271D /* ZFSSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSSettingTableViewController.h; sourceTree = "<group>"; };
 		3AA51E8621C0009D00F7271D /* ZFSSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSSettingTableViewController.m; sourceTree = "<group>"; };
+		3AAAF6AB21DE347F006ECF9C /* ZFSTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSTextField.h; sourceTree = "<group>"; };
+		3AAAF6AC21DE347F006ECF9C /* ZFSTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSTextField.m; sourceTree = "<group>"; };
+		3AAAF6AE21DE3611006ECF9C /* UITextField+placeHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeHolder.h"; sourceTree = "<group>"; };
+		3AAAF6AF21DE3611006ECF9C /* UITextField+placeHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+placeHolder.m"; sourceTree = "<group>"; };
 		3AAF49FA21BD4CC000CBF7BC /* ZFSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSTabBar.h; sourceTree = "<group>"; };
 		3AAF49FB21BD4CC000CBF7BC /* ZFSTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSTabBar.m; sourceTree = "<group>"; };
 		3AB3243121B9610D001C5DA4 /* ZFSNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSNewViewController.h; sourceTree = "<group>"; };
@@ -291,6 +297,8 @@
 				3AB82B8421DCEA4D00B42F42 /* ZFSFastLoginView.xib */,
 				3AB82B8621DCFF0100B42F42 /* ZFSFastButtom.h */,
 				3AB82B8721DCFF0100B42F42 /* ZFSFastButtom.m */,
+				3AAAF6AB21DE347F006ECF9C /* ZFSTextField.h */,
+				3AAAF6AC21DE347F006ECF9C /* ZFSTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,6 +460,8 @@
 				3A99179521BE89E300DB9505 /* UIView+Frame.m */,
 				3AA51E7821BFDA8500F7271D /* UIBarButtonItem+Item.h */,
 				3AA51E7921BFDA8500F7271D /* UIBarButtonItem+Item.m */,
+				3AAAF6AE21DE3611006ECF9C /* UITextField+placeHolder.h */,
+				3AAAF6AF21DE3611006ECF9C /* UITextField+placeHolder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -730,6 +740,7 @@
 				3AA51E8721C0009D00F7271D /* ZFSSettingTableViewController.m in Sources */,
 				3AB82B8321DCEA2900B42F42 /* ZFSFastLoginView.m in Sources */,
 				3AAF49FC21BD4CC000CBF7BC /* ZFSTabBar.m in Sources */,
+				3AAAF6B021DE3611006ECF9C /* UITextField+placeHolder.m in Sources */,
 				3AE1822521D65AF200778FD5 /* ZFSLogRegisterView.m in Sources */,
 				3A41F3AD21B9718F005EA1A3 /* UIImage+Image.m in Sources */,
 				3AA51E7D21BFF1F000F7271D /* ZFSNavigationController.m in Sources */,
@@ -740,6 +751,7 @@
 				3AB3243C21B96205001C5DA4 /* ZFSMeTableViewController.m in Sources */,
 				3A21196A21B81A67001B2D1B /* AppDelegate.m in Sources */,
 				3AC3611221C7CA9C00CBCE4A /* ZFSADItem.m in Sources */,
+				3AAAF6AD21DE347F006ECF9C /* ZFSTextField.m in Sources */,
 				3A21196921B81A67001B2D1B /* main.m in Sources */,
 				3A99179621BE89E300DB9505 /* UIView+Frame.m in Sources */,
 			);
